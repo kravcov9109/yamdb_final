@@ -35,7 +35,7 @@ class IsAdminOrModer(BasePermission):
         if request.user.is_anonymous:
             return False
         return (
-                obj.author == request.user
-                or request.user.role == User.UserRole.ADMIN
-                or request.user.role == User.UserRole.MODERATOR
-                )
+            obj.author == request.user
+            or request.user.role == User.UserRole.ADMIN
+            or request.user.role == User.UserRole.MODERATOR
+        )
