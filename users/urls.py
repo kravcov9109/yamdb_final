@@ -7,4 +7,4 @@ urlpatterns = [
         path('email/', get_conf_code),
         path('token/', get_token, name='token_obtain_pair'),
         path('refresh/', TokenRefreshView.as_view(), name='token_refresh'),
-]
+        ]
