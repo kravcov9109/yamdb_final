@@ -44,6 +44,19 @@ zipp==3.1.0
 gunicorn==20.0.4
 psycopg2-binary==2.8.5
 
+### Migrations and load data in the database
+python manage.py makemigration
+python manage.py migrate
+python manage.py loaddata fixtures.json
+
+## Running the tests
+
+All tests for check this project in .\yamdb_final\tests
+You can use "pytest":
+python manage.py pytest
+or
+pytest
+
 ### Steps
 
 git clone https://github.com/kravcov9109/yamdb_final.git
