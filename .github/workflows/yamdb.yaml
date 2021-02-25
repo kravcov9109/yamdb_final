@@ -60,9 +60,7 @@ jobs:
         source: "docker-compose.yaml, nginx/default.conf"
         target: "~/app/"
         script: |
-          sudo docker pull 5859109/test
-          sudo docker stop $(sudo docker ps -a -q)
-          sudo docker run --rm -d -p 5000:5000 5859109/test
+          sudo docker-compose up
 
   send_message:
     runs-on: ubuntu-latest
