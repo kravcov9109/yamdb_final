@@ -58,6 +58,7 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         passphrase: ${{ secrets.PASSPHRASE }}
         script: |
+          sudo docker image build -t 5859109/test .
           sudo docker-compose up
 
   send_message:
