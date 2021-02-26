@@ -77,6 +77,8 @@ jobs:
           sudo systemctl enable docker
           cd ~/code/
           sudo docker pull ${{ secrets.USER }}/yamdb_final
+          sudo curl -L --fail https://github.com/docker/compose/releases/download/1.28.4/run.sh -o /usr/local/bin/docker-compose
+          sudo chmod +x /usr/local/bin/docker-compose
           sudo docker-compose stop
           sudo docker-compose rm web
           sudo docker-compose up -d
