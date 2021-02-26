@@ -76,9 +76,7 @@ jobs:
           sudo systemctl start docker
           sudo systemctl enable docker
           cd ~/code/
-          sudo docker pull 5859109/yamdb_final_web
-          sudo docker-compose stop
-          sudo docker-compose rm web
+          sudo docker pull 5859109/test
           sudo docker-compose up -d
 
   send_message:
