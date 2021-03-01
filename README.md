@@ -2,6 +2,10 @@ Workflow status badge
 
 ![yamdb_final workflow](https://github.com/kravcov9109/yamdb_final/workflows/yamdb_final%20workflow/badge.svg)
 
+# server_name
+
+178.154.234.96
+
 # Continuous Integration and Continuous Deployment
 
 Continuous Integration and Continuous Deployment YMDB_FINAL project.
