@@ -48,11 +48,6 @@ zipp==3.1.0
 gunicorn==20.0.4
 psycopg2-binary==2.8.5
 
-### Migrations and load data in the database
-python manage.py makemigration
-python manage.py migrate
-python manage.py loaddata fixtures.json
-
 ## Running the tests
 
 All tests for check this project in .\yamdb_final\tests
@@ -69,6 +64,11 @@ Make the following changes on your Actions secrets on the GitHub:
 Change your DOCKER_USERNAME, DOCKER_PASSWORD for Push Docker image to Docker Hub.
 Change your HOST, USER, PASSPHRASE and SSH_KEY for executing remote ssh commands to deploy
 Change your TELEGRAM_TO (telegram id) and TELEGRAM_TOKEN for message in your telegram bot.
+Migrations and load data in the database:
+docker-compose run web python manage.py makemigration
+docker-compose run web python manage.py migrate
+docker-compose run web python manage.py loaddata fixtures.json
+
 
 ## Authors
 
