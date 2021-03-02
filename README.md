@@ -69,7 +69,6 @@ docker-compose run web python manage.py makemigration
 docker-compose run web python manage.py migrate
 docker-compose run web python manage.py loaddata fixtures.json
 
-
 ## Authors
 
 * **Vitaly Kravtsov** - *Yandex Praktikum* - [github.com/kravcov9109](https://github.com/kravcov9109)
