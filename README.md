@@ -65,9 +65,9 @@ Change your DOCKER_USERNAME, DOCKER_PASSWORD for Push Docker image to Docker Hub
 Change your HOST, USER, PASSPHRASE and SSH_KEY for executing remote ssh commands to deploy
 Change your TELEGRAM_TO (telegram id) and TELEGRAM_TOKEN for message in your telegram bot.
 Migrations and load data in the database:
-docker-compose run web python manage.py makemigration
-docker-compose run web python manage.py migrate
-docker-compose run web python manage.py loaddata fixtures.json
+docker-compose exec web python manage.py makemigrations
+docker-compose exec web python manage.py migrate
+docker-compose exec web python manage.py loaddata fixtures.json
 
 ## Authors
 
